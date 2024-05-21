@@ -1,0 +1,90 @@
+Features Description : 
+======================================================
+'length_url',                                  
+'length_hostname',
+'ip',
+'nb_dots', '.'
+'nb_hyphens', '-'
+'nb_at', '@'
+'nb_qm', '?'
+'nb_and', '&'
+'nb_or', '|'
+'nb_eq', '='                 
+'nb_underscore', '_'
+'nb_tilde', '~'
+'nb_percent', '%'
+'nb_slash', '/'
+'nb_star', '*'
+'nb_colon', ':'
+'nb_comma', ','
+'nb_semicolumn', ';'
+'nb_dollar', '$'
+'nb_space', ' '
+'nb_www', 'www'
+'nb_com', 'com'
+'nb_dslash', '//'
+http_in_path: Memeriksa apakah 'http' muncul dalam bagian path URL. Ini bisa menjadi tanda URL mencurigakan yang mencoba membingungkan pengguna.
+
+https_token: Memeriksa apakah 'https' muncul dalam URL di luar bagian protokol. Ini juga bisa menjadi trik untuk membuat URL terlihat lebih sah.
+
+ratio_digits_url: Rasio digit terhadap total panjang URL. Rasio yang tinggi mungkin menunjukkan URL mencurigakan, karena URL yang sah umumnya memiliki lebih sedikit digit.
+
+ratio_digits_host: Rasio digit terhadap total panjang hostname. Mirip dengan ratio_digits_url, tetapi khusus untuk bagian host dari URL.
+
+punycode: Memeriksa apakah URL menggunakan encoding Punycode, yang sering digunakan untuk mewakili Unicode dalam set karakter ASCII. Ini bisa digunakan dalam serangan phishing untuk membuat nama domain yang mirip secara visual.
+
+port: Mengidentifikasi apakah ada port non-standar yang ditentukan dalam URL. Port standar adalah 80 untuk HTTP dan 443 untuk HTTPS. Port non-standar bisa mencurigakan.
+
+tld_in_path: Memeriksa apakah top-level domain (TLD) muncul dalam bagian path URL. Ini bisa digunakan untuk membingungkan pengguna tentang legitimasi domain.
+
+tld_in_subdomain: Memeriksa apakah TLD muncul dalam subdomain. Ini adalah trik lain yang digunakan untuk menyesatkan pengguna tentang domain yang sebenarnya.
+
+abnormal_subdomain: Mendeteksi subdomain abnormal yang mungkin terlalu panjang atau mengandung pola yang tidak biasa, yang bisa mengindikasikan percobaan phishing.
+
+nb_subdomains: Jumlah subdomain dalam URL. Jumlah subdomain yang tinggi kadang-kadang bisa menunjukkan URL mencurigakan.
+
+prefix_suffix: Memeriksa keberadaan tanda hubung ('-') dalam nama domain. Tanda hubung tidak umum dalam nama domain yang sah dan bisa menjadi tanda phishing.
+
+random_domain: Memeriksa apakah nama domain tampak seperti rangkaian karakter acak, yang sering digunakan oleh URL berbahaya.
+
+shortening_service: Memeriksa apakah URL menggunakan layanan pemendek URL (seperti bit.ly). Layanan ini bisa menyembunyikan URL tujuan akhir, yang merupakan taktik umum dalam phishing.
+
+path_extension: Ekstensi file dalam bagian path URL (misalnya, .php, .html). Ekstensi tertentu mungkin lebih sering dikaitkan dengan aktivitas berbahaya.
+
+nb_redirection: Jumlah pengalihan yang terjadi ketika URL dikunjungi. Pengalihan berlebihan bisa menjadi taktik yang digunakan oleh situs berbahaya.
+
+nb_external_redirection: Jumlah pengalihan yang mengarah ke domain eksternal. Pengalihan eksternal berlebihan bisa mencurigakan.
+
+length_words_raw: Total panjang kata-kata dalam URL. Fitur ini bisa membantu memahami kompleksitas atau kesederhanaan struktur URL.
+
+char_repeat: Memeriksa pengulangan karakter dalam URL, yang bisa menjadi tanda percobaan untuk membuat URL yang membingungkan atau menyesatkan.
+
+shortest_words_raw: Panjang kata terpendek dalam URL. Kata yang sangat pendek bisa mencurigakan dalam beberapa konteks.
+
+shortest_word_host: Panjang kata terpendek dalam bagian host dari URL.
+
+shortest_word_path: Panjang kata terpendek dalam bagian path dari URL.
+
+longest_words_raw: Panjang kata terpanjang dalam URL.
+
+longest_word_host: Panjang kata terpanjang dalam bagian host dari URL.
+
+longest_word_path: Panjang kata terpanjang dalam bagian path dari URL.
+
+avg_words_raw: Panjang rata-rata kata-kata dalam URL.
+
+avg_word_host: Panjang rata-rata kata-kata dalam bagian host dari URL.
+
+avg_word_path: Panjang rata-rata kata-kata dalam bagian path dari URL.
+
+phish_hints: Memeriksa keberadaan kata kunci atau petunjuk yang terkait dengan phishing dalam URL.
+
+domain_in_brand: Memeriksa apakah bagian domain dari URL mengandung nama merek yang dikenal. Ini bisa digunakan untuk membuat URL terlihat sah.
+
+brand_in_subdomain: Memeriksa apakah nama merek yang dikenal muncul dalam subdomain URL.
+
+brand_in_path: Memeriksa apakah nama merek yang dikenal muncul dalam bagian path dari URL.
+
+suspecious_tld: Mengidentifikasi apakah TLD diketahui sering digunakan untuk aktivitas mencurigakan. Beberapa TLD lebih sering digunakan oleh pelaku kejahatan.
+
+statistical_report: Ini mungkin merujuk pada fitur yang berasal dari analisis statistik URL, mungkin termasuk berbagai fitur lain untuk menentukan kemungkinan URL berbahaya.
